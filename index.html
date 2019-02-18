@@ -2,58 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Web Colors</title>
-
+    <title>simple positioning</title>
     <style>
-        body {
-            background-color: lightskyblue;
-            background-color: rgb(253, 212, 218);
-
+        .container {
+            width: 500px;
+            height: 500px;
+            background-color: lightpink;
         }
 
-        h1 {
-            color: rgba(110,204, 212, 241);
+
+        .box1 {
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            position: fixed;
+            top: 50px;
+            right: 70px;
+
+            /*z-index: 3;*/
         }
 
-        div { width: 500px;
-            height: 200px;
-            background-color: cornflowerblue;
-            margin: 50px;
+        .box2 {
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            position: relative;
+            top: -50px;
+            left: 50px;
+            /*z-index: 2;*/
         }
 
-        .two{
-            width: 600px;
-        height: 200px;
-        background-color: steelblue;
+
+        .box3 {
+            height: 100px;
+            width: 100px;
+            background-color: orange;
+            position: absolute;
+            top: 125px;
+            left: 25px;
+            /*z-index: 1;*/
+
         }
-
-        .three{ width: 700px;
-    height: 200px;
-    background-color: lightpink;
-
-}
-
-        h1 {
-            padding: 12px 30px;
-        }
-
     </style>
+
+
 </head>
-<body style="background-color: #9e95a0;">
-
-<div>
-
-    <h1 style="background-color: #fdd4da">Web Color #1</h1>
-
-</div>
-<div class="two">
-<h1 style="background-color: indigo">Web Color #2</h1>
-</div>
-
-<div class="three">
-    <h1 style="background-color: aquamarine">Web Color #3</h1>
+<body>
+<div class="container">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
 </div>
 
 </body>
-
 </html>
